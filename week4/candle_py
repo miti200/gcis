@@ -1,0 +1,39 @@
+import turtle
+t=turtle
+def draw_rectangle(width, height,color):
+    t.color("pink")
+    t.begin_fill()
+    t.forward(width)
+    t.right(90)
+    t.forward(height)
+    t.right(90)
+    t.forward(width)
+    t.right(90)
+    t.forward(height)
+    t.right(90)
+    t.end_fill()
+
+def draw_candle_body():
+    t.penup()
+    t.goto(-15, -150)
+    t.pendown
+    draw_rectangle(t,30,100,"white")
+
+def draw_flame():
+    t.speed(1)
+    t.color("orange", "yellow") 
+    t.penup()
+    t.goto(0, -50) 
+    t.pendown()
+    t.begin_fill 
+    t.circle(10) 
+    t.end_fill()
+
+def main():
+    draw_candle_body
+    draw_flame()
+main()
+
+t.hideturtle
+t.hideturtle
+turtle.done
